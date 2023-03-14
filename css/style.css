@@ -25,6 +25,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100vh;
 }
 
 .container{
@@ -39,7 +40,7 @@ body{
 
 .container:hover{
     background: #ffffff30;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
 }
 
 .form  h3{
@@ -103,8 +104,19 @@ body{
     justify-content: center;
 }
 
-#umidity{
+#humidity{
     margin-right: .6em;
     padding: .6em;
     border-right: 1px solid #fefefe;
+}
+
+#description-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+}
+
+.hide{
+    display: none;
 }

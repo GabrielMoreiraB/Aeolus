@@ -7,37 +7,41 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <title>Aeolus</title>
 </head>
 <body>
+    
+
+
     <div class="glass">
         <div class="container">
             <div class="form">
                 <h3>Confira o clima de uma cidade:</h3>
                 <div class="form-input-container">
                     <input type="text" placeholder="Nome da Cidade:" id="city-input">
-                    <button><i class="fa-solid fa-magnifying-glass"></i> </button>
+                    <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i> </button>
                 </div>
             </div>
-            <div class="weather-data">
+            <div class="weather-data hide">
                 <h2 >
                     <i class="fa-solid fa-map-marker"></i>
-                    <span id="city">Belo Horizonte</span>
-                    <img src="https://flagsapi.com/BR/shiny/64.png" alt="bandeira pais" id="country">
+                    <span id="city"></span>
+                    <img src="" alt="bandeira pais" id="country">
                 </h2>
-                <p id="temperature"><span>38</span>&deg;C</p>
+                <p id="temperature"><span></span>&deg;C</p>
                 <div id="description-container">
-                    <p id="description">Nublado</p>
-                    <img src="http://openweathermap.org/img/wn/01d.png" alt="condiçoes do tempo" id="Weather-icon" >
+                    <p id="description"></p>
+                    <img src="" alt="condiçoes do tempo" id="Weather-icon" >
                 </div>
                 <div id="details-container">
-                    <p id="umidity">
+                    <p id="humidity">
                         <i class="fa-solid fa-droplet"></i>
-                        <span>48%</span>
+                        <span></span>
                     </p>
                     <p class="wind">
                         <i class="fa-solid fa-wind"></i>
-                        <span>3km/h</span>
+                        <span></span>
                     </p>
                 </div>
             </div>

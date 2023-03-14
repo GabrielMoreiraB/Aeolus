@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 :root{
     --bg-color1: rgb(255, 255, 255);
     --text-family: 'Ubuntu', sans-serif;
@@ -20,6 +22,73 @@ body{
     height: 100vh;
 }
 
+
+
+.main-loading {
+    position: relative;
+    height: 100%;
+    width: 100vw;
+    background: url('../img/loading-background.jpg') center center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    }
+
+    .main-loading::after {
+        content: '';
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background: rgba(0, 0, 0, .5);
+        backdrop-filter: blur(1.5rem);
+    }
+
+    .main-loading > *{
+        position: relative;
+        z-index: 2;
+    }
+
+    .main-loading > section {
+        
+        display: flex;
+        margin-top: auto;
+        flex-direction: column;
+        gap: 3em;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 10em;
+    }
+
+    .main-loading footer{
+        position: absolute;
+        font-size: .7em;
+        top: 95%;
+        left: 82%;
+    }
+
+    progress {
+        width: 100%;
+        height: .7rem;
+        border-radius: 2.5rem;
+        overflow: hidden;
+    }
+
+    aside > section > h1{
+        text-align: center;
+        font-family: 'Lobster', cursive;
+        font-size: 2em;
+        font-weight: bolder;
+    }
+
+    footer > a > span, section > h1 > span{
+        color: #2CBEE4;
+    }
 
 .glass{
     display: flex;

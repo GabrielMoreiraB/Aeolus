@@ -1,3 +1,44 @@
+const loadingScreen = () => {
+    const progressBar = document.querySelector('progress')
+    const loadingPage = document.querySelector('.main-loading')
+    const mainHome = document.querySelector('.glass')
+    let progressBarValue = 0;   
+
+    const animationBar = (speed, add) => {
+
+        if (add) {
+            progressBarValue++;
+        } else {
+            progressBarValue = 0;
+        }
+        
+        progressBar.setAttribute('value', progressBarValue);
+        setTimeout(() => fillBar(), speed)
+
+    }
+
+    const fillBar = () => {
+        if (progressBarValue < 101){
+            mainHome.classList.add('hide')
+            animationBar(30, true)
+        } else {
+            loadingPage.classList.add('hide')
+            mainHome.classList.remove('hide')
+
+        }
+
+    }
+
+    fillBar()
+}
+
+loadingScreen()
+
+
+
+
+
+
 const apiKey = "66d6a338e191c48f2e21cc7e70a235a9";
 
 const cityInput = document.getElementById("city-input");

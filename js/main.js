@@ -58,7 +58,6 @@ async function getWather(city){
     const apiweatherURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=matric&appid=${apiKey}&lang=pt_br`;
     const weatherURL = await fetch(apiweatherURL);
     const weatherJson = await weatherURL.json();
-    console.log(weatherJson)
     return weatherJson
 }
 
